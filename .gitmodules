@@ -1,0 +1,3 @@
+[submodule "BaiduPCS"]
+	path = BaiduPCS
+	url = git@github.com:GangZhuo/BaiduPCS.git

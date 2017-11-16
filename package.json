@@ -1,0 +1,27 @@
+{
+  "name": "baidupcs",
+  "version": "1.0.0",
+  "description": "BaiduPcs node.js warp",
+  "main": "index.js",
+  "repository": "git@github.com:Yufeikang/baidupcs-node.git",
+  "author": "kang",
+  "license": "MIT",
+  "scripts": {
+    "install": "prebuild-install || node-gyp rebuild",
+    "rebuild": "rm -rf prebuilds && prebuild --compile",
+    "prebuild": "prebuild --all --strip --verbose",
+    "prebuild-upload": "prebuild --all --strip --verbose"
+  },
+  "dependencies": {
+    "bindings": "^1.3.0",
+    "nan": "^2.8.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.2",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "prebuild": "^6.2.2"
+  },
+  "gypfile": true
+}
